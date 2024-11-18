@@ -36,7 +36,7 @@ RegisterNetEvent('qb-taxi:server:NpcPay', function(payment)
             player.Functions.AddMoney('cash', payment)
             local chance = math.random(1, 100)
             if chance < 26 then
-                player.Functions.AddItem('cryptostick', 1, false)
+                player.Functions.AddItem('weed_purplehaze_seed', 1, false)
                 TriggerClientEvent('inventory:client:ItemBox', src, ITEMS['cryptostick'], 'add')
             end
         else
